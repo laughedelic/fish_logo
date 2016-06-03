@@ -17,9 +17,39 @@ fisher install laughedelic/fish_logo
 
 ## Usage
 
-```fish
-fish_logo
-```
+This plugin adds the `fish_logo` function with the following _positional_ arguments:
+
+| # | Argument       | Default  |
+|--:|:---------------|:--------:|
+| 1 | first color    |  `red`   |
+| 2 | second color   |  `f70`   |
+| 3 | third color    | `yellow` |
+| 4 | "mouth" symbol |   `[`    |
+| 5 | eye symbol     |   `O`    |
+
+* Colors are any valid arguments of the [`set_color`](file:///usr/local/Cellar/fish/2.3.0/share/doc/fish/commands.html#set_color) command: named colors, 3 or 6 hex digits. Named colors are _autocompleted_.
+
+* Note, that defaults `red` and `yellow` will be interpreted by _your terminal_, so the overall logo look will "adapt" to your terminal color scheme.  
+  The orange color is not in the standard 8-colors palette, so it's hardcoded, but anyway should look well with different variations of red and yellow.
+
+* To "skip" an argument (e.g. use the default), just pass an empty one:
+
+  ```fish
+  fish_logo f00 '' ff0
+  ```
+
+* If you don't want colors, you can use
+
+  ```fish
+  fish_logo normal normal normal
+  ```
+
+* There are several variations of the logo with different symbols used for its "mouth" and eye. The defaults correspond to the logo on the fish-shell website. Another variation of the logo found in the fish-shell repo uses `L` and `@` symbols:
+
+  ```fish
+  fish_logo '' '' '' L @
+  ```
+
 
 
 ## Credits
