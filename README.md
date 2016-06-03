@@ -5,6 +5,7 @@
 
 This plugin adds a function to print out the [fish-shell](http://fish.sh) ASCII-art logo.
 
+![](https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/6f79af2f94253c2828dff6262f9818468d972e96/default-base16-colors.png)
 
 ## Installation
 
@@ -17,15 +18,15 @@ fisher install laughedelic/fish_logo
 
 ## Usage
 
-This plugin adds the `fish_logo` function with the following _positional_ arguments:
+* This plugin adds the `fish_logo` function with the following _positional_ arguments:
 
-| # | Argument       | Default  |
-|--:|:---------------|:--------:|
-| 1 | first color    |  `red`   |
-| 2 | second color   |  `f70`   |
-| 3 | third color    | `yellow` |
-| 4 | "mouth" symbol |   `[`    |
-| 5 | eye symbol     |   `O`    |
+  | # | Argument       | Default  |
+  |--:|:---------------|:--------:|
+  | 1 | first color    |  `red`   |
+  | 2 | second color   |  `f70`   |
+  | 3 | third color    | `yellow` |
+  | 4 | "mouth" symbol |   `[`    |
+  | 5 | eye symbol     |   `O`    |
 
 * Colors are any valid arguments of the [`set_color`](file:///usr/local/Cellar/fish/2.3.0/share/doc/fish/commands.html#set_color) command: named colors, 3 or 6 hex digits. Named colors are _autocompleted_.
 
