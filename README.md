@@ -28,7 +28,7 @@ fisher install laughedelic/fish_logo
   | 4 | "mouth" symbol |   `[`    |
   | 5 | eye symbol     |   `O`    |
 
-* Colors are any valid arguments of the [`set_color`](file:///usr/local/Cellar/fish/2.3.0/share/doc/fish/commands.html#set_color) command: named colors, 3 or 6 hex digits. Named colors are _autocompleted_.
+* Colors are any valid arguments of the [`set_color`](http://fish.sh/docs/current/commands.html#set_color) command: named colors, 3 or 6 hex digits. Named colors are _autocompleted_.
 
 * Note, that defaults `red` and `yellow` will be interpreted by _your terminal_, so the overall logo look will "adapt" to your terminal color scheme.  
   The orange color is not in the standard 8-colors palette, so it's hardcoded, but anyway should look well with different variations of red and yellow.
