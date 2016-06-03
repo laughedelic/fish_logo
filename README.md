@@ -3,9 +3,15 @@
 [![](https://img.shields.io/badge/license-MIT-blue.svg)](https://www.tldrlegal.com/l/mit)
 [![](https://fisherman-wharf.herokuapp.com/badge.svg)](https://fisherman-wharf.herokuapp.com)
 
-This plugin adds a function to print out the [fish-shell](http://fish.sh) ASCII-art logo.
+This plugin adds a function to print out the [fish-shell](http://fish.sh) ASCII-art logo. And it's customizable! See [Usage](#Usage) and [Examples](#Examples).
 
-![](https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/6f79af2f94253c2828dff6262f9818468d972e96/default-base16-colors.png)
+<div align="center">
+  <img
+    width="400"
+    src="https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/6f79af2f94253c2828dff6262f9818468d972e96/default-base16-colors.png"
+  />
+</div>
+
 
 ## Installation
 
@@ -20,18 +26,15 @@ fisher install laughedelic/fish_logo
 
 * This plugin adds the `fish_logo` function with the following _positional_ arguments:
 
-  | # | Argument       | Default  |
-  |--:|:---------------|:--------:|
-  | 1 | first color    |  `red`   |
-  | 2 | second color   |  `f70`   |
-  | 3 | third color    | `yellow` |
-  | 4 | "mouth" symbol |   `[`    |
-  | 5 | eye symbol     |   `O`    |
+  | # | Argument           | Default  |
+  |--:|:-------------------|:--------:|
+  | 1 | outer color        |  `red`   |
+  | 2 | intermediate color |  `f70`   |
+  | 3 | inner color        | `yellow` |
+  | 4 | "mouth" symbol     |   `[`    |
+  | 5 | eye symbol         |   `O`    |
 
 * Colors are any valid arguments of the [`set_color`](http://fish.sh/docs/current/commands.html#set_color) command: named colors, 3 or 6 hex digits. Named colors are _autocompleted_.
-
-* Note, that defaults `red` and `yellow` will be interpreted by _your terminal_, so the overall logo look will "adapt" to your terminal color scheme.  
-  The orange color is not in the standard 8-colors palette, so it's hardcoded, but anyway should look well with different variations of red and yellow.
 
 * To "skip" an argument (e.g. use the default), just pass an empty one:
 
@@ -45,12 +48,29 @@ fisher install laughedelic/fish_logo
   fish_logo normal normal normal
   ```
 
-* There are several variations of the logo with different symbols used for its "mouth" and eye. The defaults correspond to the logo on the fish-shell website. Another variation of the logo found in the fish-shell repo uses `L` and `@` symbols:
+* There are several variations of the logo with different symbols used for its "mouth" and eye. The defaults correspond to the logo on the fish-shell website. Another variation of the logo seen in the wild uses `L` and `@` symbols:
 
   ```fish
   fish_logo '' '' '' L @
   ```
 
+  This really affects how the fish looks, so try to experiment with it yourself.
+
+
+## Examples
+
+Note, that named colors will be interpreted by _your terminal_, so the overall look of the logo will "adapt" to your terminal color scheme.  
+
+The orange color is not in the standard 8-colors palette, so the default for it is hardcoded, but anyway it should look well with different variations of red and yellow.
+
+| Terminal |  Typeface  | Color Schemes |
+|:--------:|:----------:|:-------------:|
+| [iTerm2] | [mononoki] |   [base16]    |
+
+| ![red-google]      | ![blue-londontube] | ![red-default]      |
+|:-------------------|:-------------------|:--------------------|
+| ![blue-harmonic16] | ![red-solarized-l] | ![red-solarized]    |
+| ![red-monokai]     | ![blue-solarized]  | ![blue-solarized-l] |
 
 
 ## Credits
@@ -62,3 +82,25 @@ This work is based on the following findings:
   + [`doc_src/branding/`](https://github.com/fish-shell/fish-shell/tree/master/doc_src/branding) with the graphical logo made by [@stestagg](https://github.com/stestagg)
   + discussion in [#114](https://github.com/fish-shell/fish-shell/issues/114) and the [function](https://github.com/fish-shell/fish-shell/issues/114#issuecomment-24101750) by [@xfix](https://github.com/xfix)
 - [gist](https://gist.github.com/siteshwar/5472791) by [@siteshwar](https://github.com/siteshwar) with a variation of the logo
+
+
+[iTerm2]: http://iterm2.com/
+[mononoki]: http://madmalik.github.io/mononoki/
+[base16]: https://github.com/chriskempson/base16/
+
+[red-bright]:      https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/be97b640e8456cceaaac1a94ed3c19698e6e9c15/red-base16-bright.dark.png
+[red-colors]:      https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/be97b640e8456cceaaac1a94ed3c19698e6e9c15/red-base16-colors.dark.png
+[red-flat]:        https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/be97b640e8456cceaaac1a94ed3c19698e6e9c15/red-base16-flat.dark.png
+[red-default]:     https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/be97b640e8456cceaaac1a94ed3c19698e6e9c15/red-base16-default.dark.png
+[red-monokai]:     https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/be97b640e8456cceaaac1a94ed3c19698e6e9c15/red-base16-monokai.dark.png
+[red-solarized]:   https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/be97b640e8456cceaaac1a94ed3c19698e6e9c15/red-base16-solarized.dark.png
+[red-google]:      https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/be97b640e8456cceaaac1a94ed3c19698e6e9c15/red-base16-google.dark.png
+[red-tomorrow]:    https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/be97b640e8456cceaaac1a94ed3c19698e6e9c15/red-base16-tomorrow.dark.png
+[red-solarized-l]: https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/be97b640e8456cceaaac1a94ed3c19698e6e9c15/red-base16-solarized.light.png
+
+[blue-3024]:        https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/21ec8289629642fa5ed18477825923834f631cfc/blue-base16-3024.dark.png
+[blue-eighties]:    https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/21ec8289629642fa5ed18477825923834f631cfc/blue-base16-eighties.dark.png
+[blue-harmonic16]:  https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/21ec8289629642fa5ed18477825923834f631cfc/blue-base16-harmonic16.dark.png
+[blue-londontube]:  https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/21ec8289629642fa5ed18477825923834f631cfc/blue-base16-londontube.dark.png
+[blue-solarized]:   https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/21ec8289629642fa5ed18477825923834f631cfc/blue-base16-solarized.dark.png
+[blue-solarized-l]: https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/21ec8289629642fa5ed18477825923834f631cfc/blue-base16-solarized.light.png
