@@ -1,4 +1,4 @@
-function fish_logo -a red orange yellow eye mouth -d "Fish-shell ASCII-art logo"
+function fish_logo -a red orange yellow mouth eye -d "Fish-shell ASCII-art logo"
 
     [ $red    ]; or set red    'red'
     [ $orange ]; or set orange 'ff7f00'
@@ -8,8 +8,8 @@ function fish_logo -a red orange yellow eye mouth -d "Fish-shell ASCII-art logo"
     set o (set_color "$orange")
     set y (set_color "$yellow")
 
-    [ $eye   ]; or set eye '0'
     [ $mouth ]; or set mouth '['
+    [ $eye   ]; or set eye 'O'
 
     echo '                 '$r'___
   ___======____='$o'-'$y'-'$o'-='$r')
