@@ -3,7 +3,7 @@
 [![](https://img.shields.io/badge/license-MIT-blue.svg)](https://www.tldrlegal.com/l/mit)
 [![](https://fisherman-wharf.herokuapp.com/badge.svg)](https://fisherman-wharf.herokuapp.com)
 
-This plugin adds a function to print out the [fish-shell](http://fish.sh) ASCII-art logo. And it's customizable! See [Usage](#Usage) and [Examples](#Examples).
+This plugin adds a function to print out the [fish-shell](http://fish.sh) ASCII-art logo. And it's customizable! See [Usage](#usage) and [Examples](#examples).
 
 <div align="center">
   <img
@@ -55,6 +55,16 @@ fisher install laughedelic/fish_logo
   ```
 
   This really affects how the fish looks, so try to experiment with it yourself.
+
+* You can add this logo to your [fish greeting](http://fish.sh/docs/current/index.html#greeting) with this function:
+
+  ```fish
+  function fish_greeting
+      fish_logo
+  end
+  ```
+
+  Just write it to `~/.config/fish/functions/fish_greeting.fish` and you will see it every time you start a new session.
 
 
 ## Examples
