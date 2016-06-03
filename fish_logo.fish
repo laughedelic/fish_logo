@@ -1,12 +1,12 @@
 function fish_logo -a red orange yellow mouth eye -d "Fish-shell ASCII-art logo"
 
     [ $red    ]; or set red    'red'
-    [ $orange ]; or set orange 'ff7f00'
+    [ $orange ]; or set orange 'f70'
     [ $yellow ]; or set yellow 'yellow'
 
-    set r (set_color "$red")
-    set o (set_color "$orange")
-    set y (set_color "$yellow")
+    set r (set_color $red)
+    set o (set_color $orange)
+    set y (set_color $yellow)
 
     [ $mouth ]; or set mouth '['
     [ $eye   ]; or set eye 'O'
