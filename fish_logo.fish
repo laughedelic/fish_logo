@@ -1,29 +1,32 @@
-function fish_logo -a red orange yellow mouth eye -d "Fish-shell ASCII-art logo"
+function fish_logo \
+    --description="Fish-shell colorful ASCII-art logo" \
+    --argument-names outer_color medium_color inner_color mouth eye
 
-    [ $red    ]; or set red    'red'
-    [ $orange ]; or set orange 'f70'
-    [ $yellow ]; or set yellow 'yellow'
-
-    set r (set_color $red)
-    set o (set_color $orange)
-    set y (set_color $yellow)
-
+    # defaults:
+    [ $outer_color  ]; or set outer_color  'red'
+    [ $medium_color ]; or set medium_color 'f70'
+    [ $inner_color  ]; or set inner_color  'yellow'
     [ $mouth ]; or set mouth '['
-    [ $eye   ]; or set eye 'O'
+    [ $eye   ]; or set eye   'O'
 
-    echo '                 '$r'___
-  ___======____='$o'-'$y'-'$o'-='$r')
-/T            \_'$y'--='$o'=='$r')
-'$mouth' \ '$o'('$y$eye$o')   '$r'\~    \_'$y'-='$o'='$r')
- \      / )J'$o'~~    \\'$y'-='$r')
-  \\\\___/  )JJ'$o'~'$y'~~   '$r'\)
-   \_____/JJJ'$o'~~'$y'~~    '$r'\\
-   '$o'/ '$y'\  '$y', \\'$r'J'$o'~~~'$y'~~     '$o'\\
-  (-'$y'\)'$r'\='$o'|'$y'\\\\\\'$o'~~'$y'~~       '$o'L_'$y'_
-  '$o'('$r'\\'$o'\\)  ('$y'\\'$o'\\\)'$r'_           '$y'\=='$o'__
-   '$r'\V    '$o'\\\\'$r'\) =='$o'=_____   '$y'\\\\\\\\'$o'\\\\
-          '$r'\V)     \_) '$o'\\\\'$y'\\\\JJ\\'$o'J\)
-                      '$r'/'$o'J'$y'\\'$o'J'$r'T\\'$o'JJJ'$r'J)
-                      (J'$o'JJ'$r'| \UUU)
+    # shortcuts:
+    set o (set_color $outer_color)
+    set m (set_color $medium_color)
+    set i (set_color $inner_color)
+
+    echo '                 '$o'___
+  ___======____='$m'-'$i'-'$m'-='$o')
+/T            \_'$i'--='$m'=='$o')
+'$mouth' \ '$m'('$i$eye$m')   '$o'\~    \_'$i'-='$m'='$o')
+ \      / )J'$m'~~    \\'$i'-='$o')
+  \\\\___/  )JJ'$m'~'$i'~~   '$o'\)
+   \_____/JJJ'$m'~~'$i'~~    '$o'\\
+   '$m'/ '$i'\  '$i', \\'$o'J'$m'~~~'$i'~~     '$m'\\
+  (-'$i'\)'$o'\='$m'|'$i'\\\\\\'$m'~~'$i'~~       '$m'L_'$i'_
+  '$m'('$o'\\'$m'\\)  ('$i'\\'$m'\\\)'$o'_           '$i'\=='$m'__
+   '$o'\V    '$m'\\\\'$o'\) =='$m'=_____   '$i'\\\\\\\\'$m'\\\\
+          '$o'\V)     \_) '$m'\\\\'$i'\\\\JJ\\'$m'J\)
+                      '$o'/'$m'J'$i'\\'$m'J'$o'T\\'$m'JJJ'$o'J)
+                      (J'$m'JJ'$o'| \UUU)
                        (UU)'(set_color normal)
 end

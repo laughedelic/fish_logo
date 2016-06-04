@@ -26,13 +26,13 @@ fisher install laughedelic/fish_logo
 
 * This plugin adds the `fish_logo` function with the following _positional_ arguments:
 
-  | # | Argument           | Default  |
-  |--:|:-------------------|:--------:|
-  | 1 | outer color        |  `red`   |
-  | 2 | intermediate color |  `f70`   |
-  | 3 | inner color        | `yellow` |
-  | 4 | "mouth" symbol     |   `[`    |
-  | 5 | eye symbol         |   `O`    |
+  | # | Argument       | Default  |
+  |--:|:---------------|:--------:|
+  | 1 | outer color    |  `red`   |
+  | 2 | medium color   |  `f70`   |
+  | 3 | inner color    | `yellow` |
+  | 4 | "mouth" symbol |   `[`    |
+  | 5 | eye symbol     |   `O`    |
 
 * Colors are any valid arguments of the [`set_color`](http://fish.sh/docs/current/commands.html#set_color) command: named colors, 3 or 6 hex digits. Named colors are _autocompleted_.
 
