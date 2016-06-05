@@ -8,7 +8,7 @@ This plugin adds a function to print out the [fish-shell](http://fish.sh) ASCII-
 <div align="center">
   <img
     width="400"
-    src="https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/6f79af2f94253c2828dff6262f9818468d972e96/default-base16-colors.png"
+    src="https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/default-base16-colors.png"
   />
 </div>
 
@@ -98,19 +98,19 @@ This work is based on the following findings:
 [mononoki]: http://madmalik.github.io/mononoki/
 [base16]: https://github.com/chriskempson/base16/
 
-[red-bright]:      https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/be97b640e8456cceaaac1a94ed3c19698e6e9c15/red-base16-bright.dark.png
-[red-colors]:      https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/be97b640e8456cceaaac1a94ed3c19698e6e9c15/red-base16-colors.dark.png
-[red-flat]:        https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/be97b640e8456cceaaac1a94ed3c19698e6e9c15/red-base16-flat.dark.png
-[red-default]:     https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/be97b640e8456cceaaac1a94ed3c19698e6e9c15/red-base16-default.dark.png
-[red-monokai]:     https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/be97b640e8456cceaaac1a94ed3c19698e6e9c15/red-base16-monokai.dark.png
-[red-solarized]:   https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/be97b640e8456cceaaac1a94ed3c19698e6e9c15/red-base16-solarized.dark.png
-[red-google]:      https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/be97b640e8456cceaaac1a94ed3c19698e6e9c15/red-base16-google.dark.png
-[red-tomorrow]:    https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/be97b640e8456cceaaac1a94ed3c19698e6e9c15/red-base16-tomorrow.dark.png
-[red-solarized-l]: https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/be97b640e8456cceaaac1a94ed3c19698e6e9c15/red-base16-solarized.light.png
+[red-bright]:      https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/red-base16-bright.dark.png
+[red-colors]:      https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/red-base16-colors.dark.png
+[red-flat]:        https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/red-base16-flat.dark.png
+[red-default]:     https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/red-base16-default.dark.png
+[red-monokai]:     https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/red-base16-monokai.dark.png
+[red-solarized]:   https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/red-base16-solarized.dark.png
+[red-google]:      https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/red-base16-google.dark.png
+[red-tomorrow]:    https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/red-base16-tomorrow.dark.png
+[red-solarized-l]: https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/red-base16-solarized.light.png
 
-[blue-3024]:        https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/21ec8289629642fa5ed18477825923834f631cfc/blue-base16-3024.dark.png
-[blue-eighties]:    https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/21ec8289629642fa5ed18477825923834f631cfc/blue-base16-eighties.dark.png
-[blue-harmonic16]:  https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/21ec8289629642fa5ed18477825923834f631cfc/blue-base16-harmonic16.dark.png
-[blue-londontube]:  https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/21ec8289629642fa5ed18477825923834f631cfc/blue-base16-londontube.dark.png
-[blue-solarized]:   https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/21ec8289629642fa5ed18477825923834f631cfc/blue-base16-solarized.dark.png
-[blue-solarized-l]: https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/21ec8289629642fa5ed18477825923834f631cfc/blue-base16-solarized.light.png
+[blue-3024]:        https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/blue-base16-3024.dark.png
+[blue-eighties]:    https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/blue-base16-eighties.dark.png
+[blue-harmonic16]:  https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/blue-base16-harmonic16.dark.png
+[blue-londontube]:  https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/blue-base16-londontube.dark.png
+[blue-solarized]:   https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/blue-base16-solarized.dark.png
+[blue-solarized-l]: https://gist.githubusercontent.com/laughedelic/b7d5e572b0a35afd51fd40a2d9eef66b/raw/blue-base16-solarized.light.png
