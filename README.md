@@ -15,11 +15,15 @@ This plugin adds a function to print out the [fish-shell](http://fish.sh) ASCII-
 
 ## Installation
 
-With [fisherman](https://github.com/fisherman/fisherman):
+* Using [fisherman](https://github.com/fisherman/fisherman):
+  ```shell
+  fisher install laughedelic/fish_logo
+  ```
 
-```
-fisher install laughedelic/fish_logo
-```
+* Using [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish):
+  ```shell
+  omf install https://github.com/laughedelic/fish_logo
+  ```
 
 
 ## Usage
