@@ -22,7 +22,7 @@ This plugin adds a function to print out the [fish-shell](http://fish.sh) ASCII-
 
 * Using [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish):
   ```shell
-  omf install https://github.com/laughedelic/fish_logo
+  omf install fish_logo
   ```
 
 
