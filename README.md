@@ -15,9 +15,9 @@ This plugin adds a function to print out the [fish-shell](http://fish.sh) ASCII-
 
 ## Installation
 
-* Using [fisherman](https://github.com/fisherman/fisherman):
+* Using [Fisher](https://github.com/jorgebucaran/fisher):
   ```shell
-  fisher install laughedelic/fish_logo
+  fisher add laughedelic/fish_logo
   ```
 
 * Using [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish):
