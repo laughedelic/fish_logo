@@ -14,6 +14,24 @@ function fish_logo \
     set m (set_color $medium_color)
     set i (set_color $inner_color)
 
+    if test (count $o) != 1
+        echo 'Invalid color for "outer_color"' >&2
+        echo 'Usage: fish_logo <outer_color> <medium_color> <inner_color> <mouth> <eye>' >&2
+        return 1
+    end
+
+    if test (count $m) != 1
+        echo 'Invalid color for "medium_color"' >&2
+        echo 'Usage: fish_logo <outer_color> <medium_color> <inner_color> <mouth> <eye>' >&2
+        return 1
+    end
+
+    if test (count $i) != 1
+        echo 'Invalid color for "inner_color"' >&2
+        echo 'Usage: fish_logo <outer_color> <medium_color> <inner_color> <mouth> <eye>' >&2
+        return 1
+    end
+
     echo '                 '$o'___
   ___======____='$m'-'$i'-'$m'-='$o')
 /T            \_'$i'--='$m'=='$o')
