@@ -9,10 +9,24 @@ function fish_logo \
     [ $mouth ]; or set mouth '['
     [ $eye   ]; or set eye   'O'
 
+    set usage 'Usage: fish_logo <outer_color> <medium_color> <inner_color> <mouth> <eye>
+See set_color --help for more on available colors.'
+
+    if contains -- $outer_color '--help' '-h' '-help'
+        echo $usage
+        return 0
+    end
+
     # shortcuts:
     set o (set_color $outer_color)
     set m (set_color $medium_color)
     set i (set_color $inner_color)
+
+    if test (count $o) != 1; or test (count $m) != 1; or test (count $i) != 1
+        echo 'Invalid color argument'
+        echo $usage
+        return 1
+    end
 
     echo '                 '$o'___
   ___======____='$m'-'$i'-'$m'-='$o')
